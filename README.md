@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The Weight We Carry
 
-## Getting Started
 
-First, run the development server:
+A Mental Health Visual Novel
+The Weight We Carry is an interactive, browser-based visual novel that explores themes of anxiety, high-functioning depression, and the masks we wear in our daily lives. Built with Next.js and React, it features a branching narrative, an immersive "Inner World" mechanic, and multiple emotional endings based on player choices.
 
-```bash
+🌟 Features
+Branching Narrative: Your choices impact two hidden metrics—Resilience and Anxiety—which determine the story's outcome.
+
+"Inner World" Mechanic: A unique toggle system allowing players to switch between the character's external dialogue and their hidden internal thoughts.
+
+Visual Novel Engine: A custom-built UI featuring dynamic backgrounds, character sprites, and a typewriter text effect.
+
+Immersive Audio: Dynamic background music that shifts based on the current scene and emotional tone.
+
+Responsive Design: Fully playable on both desktop and mobile devices, featuring a "Manga/Sketchbook" aesthetic.
+
+State Management: Tracks player progress and metrics across 5 distinct acts without page reloads.
+
+🛠️ Tech Stack
+Framework: Next.js 14+ (App Router)
+
+Library: React
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+Deployment: GitHub Pages
+
+🚀 Setup & Installation
+Follow these steps to run the project locally on your machine.
+
+Prerequisites
+Node.js (v18 or higher)
+
+npm (Node Package Manager)
+
+1. Clone the Repository
+Bash
+
+git clone https://github.com/Danieltun-ctrlc/mentalnovel.git
+cd mentalnovel
+2. Install Dependencies
+Bash
+
+npm install
+3. Run the Development Server
+This command starts the local server with hot-reloading enabled.
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000/mentalnovel 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 Project Structure
+app/page.tsx: The main game engine containing the state machine, visual novel UI, and logic.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+public/: Stores all static assets.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+/images: Backgrounds and character sprites.
 
-## Learn More
+/audio: Background music tracks (.mp3).
 
-To learn more about Next.js, take a look at the following resources:
+/bg: Optimized background images.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+next.config.js: Configuration for static export and asset paths (essential for GitHub Pages deployment).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🎮 How to Play
+Start: Click "Turn The Page" on the intro screen to begin.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Read: Click on the dialogue box to advance the text.
+
+Reveal Truth: At specific moments, a "Reveal Truth" button will unlock. Click this to see the character's hidden inner thoughts versus what they are saying out loud.
+
+Choose: Select options during key moments. Your choices affect your mental health metrics.
+
+Endings: Based on your cumulative choices, you will reach one of three endings: Good, Neutral, or Bad.
+
+🚢 Deployment
+This project is configured for GitHub Pages. To deploy a new version:
+
+Ensure your next.config.js has the correct basePath matching your repository name.
+
+Run the deploy script:
+
+Bash
+
+npm run deploy
+This builds the static files to the out/ directory and pushes them to the gh-pages branch.
+
+🤖 References & AI Usage
+This project was developed with the assistance of Artificial Intelligence tools to accelerate development and asset integration.
+
+Code Generation: AI was used to generate the core React components, state management logic for the Visual Novel Tailwind CSS styling structures. (Gemini)
+
+Story & Script: The narrative structure, dialogue sequences, and "Inner World" concept were refined and formatted into JSON data structures with the help of the AI assistance.
+
+Images: created by the AI Geimni ( nano Banana)
+
+Audio: from https://pixabay.com/ 
+
+Other Resources
+Icons: Provided by Lucide React.
+
+Fonts: Google Fonts (Noto Serif JP, Crimson Text, Patrick Hand).

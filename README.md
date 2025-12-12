@@ -4,7 +4,9 @@ The Weight We Carry
 A Mental Health Visual Novel
 The Weight We Carry is an interactive, browser-based visual novel that explores themes of anxiety, high-functioning depression, and the masks we wear in our daily lives. Built with Next.js and React, it features a branching narrative, an immersive "Inner World" mechanic, and multiple emotional endings based on player choices.
 
-🌟 Features
+( please download the demo video of the presentation link provided in the submission link )
+
+ Features
 Branching Narrative: Your choices impact two hidden metrics—Resilience and Anxiety—which determine the story's outcome.
 
 "Inner World" Mechanic: A unique toggle system allowing players to switch between the character's external dialogue and their hidden internal thoughts.
@@ -17,7 +19,7 @@ Responsive Design: Fully playable on both desktop and mobile devices, featuring 
 
 State Management: Tracks player progress and metrics across 5 distinct acts without page reloads.
 
-🛠️ Tech Stack
+ Tech Stack
 Framework: Next.js 14+ (App Router)
 
 Library: React
@@ -28,7 +30,7 @@ Icons: Lucide React
 
 Deployment: GitHub Pages
 
-🚀 Setup & Installation
+ Setup & Installation
 Follow these steps to run the project locally on your machine.
 
 Prerequisites
@@ -53,7 +55,7 @@ Bash
 npm run dev
 Open http://localhost:3000/mentalnovel 
 
-📂 Project Structure
+Project Structure
 app/page.tsx: The main game engine containing the state machine, visual novel UI, and logic.
 
 public/: Stores all static assets.
@@ -68,7 +70,7 @@ next.config.js: Configuration for static export and asset paths (essential for G
 
 
 
-🎮 How to Play
+How to Play
 Start: Click "Turn The Page" on the intro screen to begin.
 
 Read: Click on the dialogue box to advance the text.
@@ -91,7 +93,7 @@ Bash
 npm run deploy
 This builds the static files to the out/ directory and pushes them to the gh-pages branch.
 
-🤖 References & AI Usage
+ References & AI Usage
 This project was developed with the assistance of Artificial Intelligence tools to accelerate development and asset integration.
 
 Code Generation: AI was used to generate the core React components, state management logic for the Visual Novel Tailwind CSS styling structures. (Gemini)

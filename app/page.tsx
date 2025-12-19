@@ -20,28 +20,28 @@ import {
 // ==========================================
 const ASSET_PATHS = {
   backgrounds: {
-    commute: "/mentalnovel/bg/scene1.png", // Act 1
-    classroom: "/mentalnovel/bg/scene2.png", // Act 2
-    meclassroom: "/mentalnovel/bg/scene3.png",
-    grayscale_storm: "/mentalnovel/bg/bad_ending.png", //  Bad Ending
-    corridor: "/mentalnovel/bg/scene4.png", // Act 4
-    warm_sunset: "/mentalnovel/bg/good_ending.png", // Good Ending
-    neutral_rain: "/mentalnovel/bg/neutral.png", // Neutral Ending
+    commute: "/bg/scene1.png", // Act 1
+    classroom: "/bg/scene2.png", // Act 2
+    meclassroom: "/bg/scene3.png",
+    grayscale_storm: "/bg/bad_ending.png", //  Bad Ending
+    corridor: "/bg/scene4.png", // Act 4
+    warm_sunset: "/bg/good_ending.png", // Good Ending
+    neutral_rain: "/bg/neutral.png", // Neutral Ending
   },
   characters: {
     protagonist: "",
     jordan: "",
-    lena: "/mentalnovel/bg/lena.png",
+    lena: "/bg/lena.png",
   },
   audio: {
-    default: "/mentalnovel/audio/bgm.mp3",
-    scene2: "/mentalnovel/audio/scene2.mp3",
-    scene3: "/mentalnovel/audio/scene3.mp3",
-    scene4: "/mentalnovel/audio/scene4.mp3",
-    good: "/mentalnovel/audio/good_ending.mp3",
-    neutral: "/mentalnovel/audio/neutral_ending.mp3",
-    bad: "/mentalnovel/audio/bad_ending.mp3",
-    scene1: "/mentalnovel/audio/oldtrain.mp3",
+    default: "/audio/bgm.mp3",
+    scene2: "/audio/scene2.mp3",
+    scene3: "/audio/scene3.mp3",
+    scene4: "/audio/scene4.mp3",
+    good: "/audio/good_ending.mp3",
+    neutral: "/audio/neutral_ending.mp3",
+    bad: "/audio/bad_ending.mp3",
+    scene1: "/audio/oldtrain.mp3",
   },
 };
 

@@ -1,13 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export", // Tells Next.js to generate static HTML
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // You can remove "output: export" to use Vercel's image optimization
+  // or keep it if you still want a purely static site.
+  // Generally, removing it is better for Vercel.
+
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true, // You can keep this or set to false if you remove output: export
   },
-  // IMPORTANT: Replace 'repo-name' with your actual GitHub repository name
-  // If your repo is named 'mental-health-story', this should be '/mental-health-story'
-  basePath: "/mentalnovel",
-  assetPrefix: "/mentalnovel/",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
